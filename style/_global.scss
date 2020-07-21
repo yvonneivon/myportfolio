@@ -1,3 +1,5 @@
+/* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +10,21 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
     font-size: $header1;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+    font-size: $text;
 }
 
 h2 {
@@ -32,5 +47,4 @@ ul {
 a {
     text-decoration: none;
     color: $gray-text;
-    font-size: 1.6rem;
 }
