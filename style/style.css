@@ -300,14 +300,14 @@ nav ul {
 }
 
 .projects h2 {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .travelly,
-.ellenajoy {
+.ellenajoy, .colooors, .beatmaker {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
 }
 
 .projects img {
