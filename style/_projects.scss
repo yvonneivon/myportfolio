@@ -1,22 +1,29 @@
 .projects {
-    width: 90%;
-    margin: auto;
-    min-height: 90vh;
-    @include flex(space-between, center, row);
-    text-align: center;
-    flex-wrap: wrap;
-
-    h2 {
-        margin: 1rem;
-    }
+  width: 95%;
+  margin: auto;
+  min-height: 90vh;
+  @include flex(space-between, center, row);
+  text-align: center;
+  flex-wrap: wrap;
+  h2 {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
 }
 
 .travelly,
-.ellenajoy, .colooors, .beatmaker {
-    flex: 1 1 50rem;
+.ellenajoy,
+.colooors,
+.beatmaker,
+.modest,
+.photon {
+  flex: 1 1 50rem;
 }
 
 .projects img {
-    width: 90%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 2rem;
+  border-top: solid rgba(31, 29, 29, 0.422) 0.2rem;
 }

@@ -1,130 +1,129 @@
 .main-head {
-	width: 95%;
-	margin: 0 0 0 auto;
+  width: 95%;
+  margin: 0 0 0 auto;
 }
 
 nav {
-	@include flex(space-between, center, row);
-	min-height: 10vh;
-	width: 60%;
-	flex-wrap: wrap;
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  width: 60%;
+  flex-wrap: wrap;
 
-	.logo {
-		@include flex(flex-start, center, row);
-		flex: 1 1 10rem;
+  .logo {
+    @include flex(flex-start, center, row);
+    flex: 1 1 10rem;
 
-		h1 {
-			margin: 2rem;
-		}
-	}
+    h1 {
+      margin: 2rem;
+    }
+  }
 
-	ul {
-		@include flex(space-around, center, row);
-		flex: 1 1 40rem;
-	}
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 40rem;
+  }
 }
 
 .intro {
-	min-height: 90vh;
-	width: 90%;
-	margin: auto;
-	flex-wrap: wrap;
-	@include flex(space-between, center, row);
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  @include flex(space-between, center, row);
 
-	h2 {
-		font-size: 7rem;
-		padding-top: 1rem;
-		background: $gradient;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		display: inline-block;
-	}
+  h2 {
+    font-size: 7rem;
+    padding-top: 1rem;
+    background: $gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
 
-	h3 {
-		font-size: 5rem;
-		padding: 1rem 0rem;
-	}
+  h3 {
+    font-size: 5rem;
+    padding: 1rem 0rem;
+  }
 
-	p {
-		padding-top: 1rem;
-		color: $gray-text;
-	}
-
+  p {
+    padding-top: 1rem;
+    color: $gray-text;
+  }
 }
 
 .splash {
-	position: absolute;
-	top: 0%;
-	right: 0%;
-	height: 105%;
-	z-index: -1;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 105%;
+  z-index: -1;
 }
 
 .intro-social {
-	margin-top: 3rem;
+  margin-top: 3rem;
 
-	a {
-		margin-right: 6rem;
-	}
+  a {
+    margin-right: 6rem;
+  }
 }
 
 .active {
-	background: $gray-text;
-	color: white;
-	padding: 1rem 3rem;
-	border-radius: 2rem;
+  background: $gray-text;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
 }
 
 .intro-text,
 .intro-images {
-	flex: 1 1 40rem;
+  flex: 1 1 40rem;
 }
 
 #plant-left {
-	animation: plant 1.5s ease infinite alternate;
+  animation: plant 1.5s ease infinite alternate;
 }
 
 #plant-right {
-	animation: plant 1.5s ease infinite alternate 0.5s;
+  animation: plant 1.5s ease infinite alternate 0.5s;
 }
 
 #me {
-	animation: me 1s ease infinite alternate;
-	transform-origin: bottom;
+  animation: me 1s ease infinite alternate;
+  transform-origin: bottom;
 }
 
 #clock-arrow {
-	animation: clock 1.5s infinite linear;
-	transform-box: fill-box;
-	transform-origin: bottom;
+  animation: clock 1.5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
 }
 
 @keyframes me {
-	from {
-		transform: rotateZ(-5deg);
-	}
+  from {
+    transform: rotateZ(-5deg);
+  }
 
-	to {
-		transform: rotateZ(5deg);
-	}
+  to {
+    transform: rotateZ(5deg);
+  }
 }
 
 @keyframes plant {
-	from {
-		transform: translateY(0%);
-	}
+  from {
+    transform: translateY(0%);
+  }
 
-	to {
-		transform: translateY(-30%);
-	}
+  to {
+    transform: translateY(-30%);
+  }
 }
 
 @keyframes clock {
-	from {
-		transform: rotateZ(0deg);
-	}
+  from {
+    transform: rotateZ(0deg);
+  }
 
-	to {
-		transform: rotateZ(360deg);
-	}
+  to {
+    transform: rotateZ(360deg);
+  }
 }
